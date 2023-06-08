@@ -1,0 +1,6 @@
+prometheus_client==0.16.0
+flask==2.3.0
+pymongo==4.3.3
+structlog==23.1.0
+py-zipkin==1.2.8
+requests==2.28.0
