@@ -1,7 +1,9 @@
-FROM ubuntu:20.04
-RUN apt-get update \
-    && apt-get install -y ruby-full ruby-dev build-essential \
-    && gem install bundler --no-ri --no-rdoc
+FROM alpine
+RUN apk update --no-cache \
+    && apk add --no-cache ruby ruby-dev ruby-bundler build-base \
+    && gem install bundler --no-rdoc --no-ri \
+    && rm -rf /var/cache/apk/*
+
 
 ENV APP_HOME /app
 RUN mkdir $APP_HOME
