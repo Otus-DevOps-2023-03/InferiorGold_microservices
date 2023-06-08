@@ -1,7 +1,7 @@
-FROM python:3.10-alpine
+FROM python:alpine
 
 WORKDIR /app
-ADD . /app
+COPY . /app
 
 RUN apk --no-cache --update add build-base && \
     pip3 install -r /app/requirements.txt && \
