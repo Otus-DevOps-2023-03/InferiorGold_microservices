@@ -1,5 +1,7 @@
-FROM ruby
-RUN apt-get update -qq && apt-get install -y build-essential
+FROM ruby:alpine3.7
+
+#RUN apt-get update -qq && apt-get install -y build-essential
+RUN apk --update add build-base
 
 ENV APP_HOME /app
 RUN mkdir $APP_HOME
