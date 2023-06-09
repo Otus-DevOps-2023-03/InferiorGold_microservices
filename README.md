@@ -8,7 +8,7 @@ InferiorGold microservices repository
  - Дополнительно запускаем mongodb с подключением локального volme для хранения сообщений;
 
  #### Задания со ⭐
-1. Запуск контенеров с другими алиасами и передача данных с помощью переменных.
+1. Запуск контейнеров с другими алиасами и передача данных с помощью переменных.
 ```
 docker run -d --network=reddit --network-alias=post_db_01 --network-alias=comment_db_01 mongo:latest
 docker run -d --network=reddit -e POST_DATABASE_HOST=post_db_01 -e POST_DATABASE=posts_01 --network-alias=post_01 vvakhitov/post:1.0
