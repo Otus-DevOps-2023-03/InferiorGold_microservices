@@ -1,5 +1,14 @@
 # InferiorGold_microservices
 InferiorGold microservices repository
+
+# ДЗ по docker-4
+Базовое имя проекта docker-compose образуется из названия каталога проекта. Это можно изменить, установив переменную окружения COMPOSE_PROJECT_NAME или с помощью ключа -p, например
+```
+docker-compose -p project_name up
+```
+ - Выполнены практические задания
+ - Добавлен проект docker-compose
+
 # ДЗ по docker-3
  - Загружено приложение reddit-microservices;
  - Реализовано через Dockerfile сборка и разворачивание трех приложений "comment" "post-py" "ui";
