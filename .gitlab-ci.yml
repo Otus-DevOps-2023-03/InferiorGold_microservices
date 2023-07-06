@@ -28,8 +28,8 @@ build_job:
   script:
     - echo 'Building'
     - docker login -u $DOCKER_LOGIN -p $DOCKER_PASS
-    - cd reddit && docker build -t geralex88/gitlab-reddit:$CI_PIPELINE_IID .
-    - docker push geralex88/gitlab-reddit:$CI_PIPELINE_IID
+    - cd reddit && docker build -t root/gitlab-reddit:$CI_PIPELINE_IID .
+    - docker push root/gitlab-reddit:$CI_PIPELINE_IID
 
 test_unit_job:
   stage: test
