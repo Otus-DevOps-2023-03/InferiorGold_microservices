@@ -1,0 +1,4 @@
+app:
+  hosts:
+    server:
+      ansible_host: 51.250.88.58
