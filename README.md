@@ -1,6 +1,18 @@
 # InferiorGold_microservices
 InferiorGold microservices repository
 
+# ДЗ по monitoring-1
+Научились запускать и конфигурировать prometeus
+Реализовали мониторинг микросервисного приложения
+
+Ссылки на образы в докерхаб:
+```
+docker pull vvakhitov/prometheus:latest
+docker pull vvakhitov/ui:latest
+docker pull vvakhitov/comment:latest
+docker pull vvakhitov/post:latest
+```
+
 # ДЗ по docker-4
 Базовое имя проекта docker-compose образуется из названия каталога проекта. Это можно изменить, установив переменную окружения COMPOSE_PROJECT_NAME или с помощью ключа -p, например
 ```
