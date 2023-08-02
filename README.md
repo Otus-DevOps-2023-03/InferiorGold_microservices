@@ -1,6 +1,12 @@
 # InferiorGold_microservices
 InferiorGold microservices repository
 
+# ДЗ по logging-1
+Развернут EFK стек
+Включен централизованный сбор логов для post и ui сервисов
+Развернут Zipkin
+Включен трейсинг
+
 # ДЗ по monitoring-1
 Научились запускать и конфигурировать prometeus
 Реализовали мониторинг микросервисного приложения
